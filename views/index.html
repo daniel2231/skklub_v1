@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--Materialize-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--Custom stylesheet-->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link href="/css/gallery-materialize.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <nav class=" teal darken-1 nav-extended">
+      <div class="nav-background">
+        <div class="pattern active"></div>
+      </div>
+      <div class="nav-wrapper container">
+        <a href="index.html" class="brand-logo">SKKLUB</a>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"
+          ><i class="material-icons">menu</i></a
+        >
+        <ul class="right hide-on-med-and-down">
+          <li class="active"><a href="index.html">중앙동아리</a></li>
+          <li><a href="index-dark.html">학회</a></li>
+          <li><a href="blog.html">학교기관/단체</a></li>
+          <li><a href="docs.html">About</a></li>
+        </ul>
+        <!-- Dropdown Structure -->
+
+        <div class="nav-header center">
+          <h1 class="header">모든 동아리 정보를 한눈에!</h1>
+          <div class="">Made with 💚by likelion SKKU</div>
+        </div>
+      </div>
+
+      <!-- Fixed Masonry Filters -->
+      <div class="categories-wrapper teal darken-4">
+        <div class="categories-container">
+          <ul class="categories container">
+            <li class="active"><a href="#all">전체</a></li>
+            <li><a href="#yy">연행예술</a></li>
+            <li><a href="#py">평면예술</a></li>
+            <li><a href="#bs">봉사</a></li>
+            <li><a href="#cg">취미교양</a></li>
+            <li><a href="#sp">스포츠</a></li>
+            <li><a href="#jg">종교분과</a></li>
+            <li><a href="#hb">학술분과</a></li>
+            <li><a href="#is">인문사회</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <ul class="sidenav" id="nav-mobile">
+      <li class="active">
+        <a href="index.html"
+          ><i class="material-icons">folder_special</i>중앙동아리</a
+        >
+      </li>
+      <li>
+        <a href="index-dark.html"
+          ><i class="material-icons">menu_book</i>학회</a
+        >
+      </li>
+      <li>
+        <a href="blog.html"
+          ><i class="material-icons">school</i>학교기관/단체</a
+        >
+      </li>
+      <li>
+        <a href="docs.html"><i class="material-icons">emoji_people</i>About</a>
+      </li>
+    </ul>
+    <!-- Gallery -->
+    <div class="container">
+      <div class="gallery row"></div>
+    </div>
+
+    <footer class="teal darken-1 page-footer">
+      <div class=" container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">SKKLUB</h5>
+            <p class="grey-text text-lighten-4">
+              멋쟁이사자처럼 X 성균관대학교
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">SKKU Likelion Links</h5>
+            <ul>
+              <li>
+                <a class="grey-text text-lighten-3" href="#!">Facebook</a>
+              </li>
+              <li><a class="grey-text text-lighten-3" href="#!">Website</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="teal darken-1 footer-copyright">
+        <div class="container">
+          © 2020 Copyright LikeLion SKKU
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/color-thief.min.js"></script>
+  <script src="js/galleryExpand.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/cardMaker.js"></script>
+  <script>
+    setTimeout(function() {
+      console.log("loaded");
+      var elems = document.querySelectorAll(".sidenav");
+      var instances = M.Sidenav.init(elems, {});
+
+      var resizeImg = document.getElementsByClassName("img-re");
+      resizeImg.height = "100px";
+      resizeImg.width = "200px";
+    }, 100);
+  </script>
+  <script>
+    window.smoothScroll = function(target) {
+      var scrollContainer = target;
+      do {
+        //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+      } while (scrollContainer.scrollTop == 0);
+
+      var targetY = 0;
+      do {
+        //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop -40;
+      } while ((target = target.offsetParent));
+
+      scroll = function(c, a, b, i) {
+        i++;
+        if (i > 30) return;
+        c.scrollTop = a + ((b - a) / 30) * i;
+        setTimeout(function() {
+          scroll(c, a, b, i);
+        }, 20);
+      };
+      // start scrolling
+      scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+    };
+  </script>
+</html>

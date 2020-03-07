@@ -1,0 +1,34 @@
+.card-name {
+  font-size: 2em;
+}
+
+.btn {
+  margin-top: 15px;
+  font-size: 0.8em !important;
+  padding: 0 10px !important;
+}
+
+.nav-extended {
+  margin-bottom: 20px;
+}
+
+.header {
+  margin-bottom: 0;
+}
+
+.card-buttons {
+  white-space: nowrap;
+}
+
+.card-icon {
+  font-size: 80px;
+  color: black;
+}
+
+.line {
+  font-style: italic;
+}
+
+.card-panel {
+  
+}

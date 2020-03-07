@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "skklub",
+  "private_key_id": "62eb7ed60e46ec0d28eacc41538bbbb73fe045d4",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDE4Z+KIZUVXlLQ\n+w3eHMzk3+g2oi1R5RuB0aUhTgFZM6wYdHk80hbTxD1Iu3JEsHpIrTXpbDgDnbs/\n2urNtEyNg7cdKxLG+zAaIRrmps+cfkaNVtgSnW8Ej6tK5sWtB6BcfXNfd7SB51VO\nGScs3QMRoh8AEV+H+4v/lNpwqdekrtejJqUUOoCgjDQwNwRwsxraekaSjDdV056t\nSWgR9YKmPTooYylZ6TbrikXAVJwXCknFzDbAg3zRiP/KsSWAgB7ZrfxlDN+zX+3h\nnGI3+tKEOQSnSGJXNnRN+v7DQaImXjEwt9li/D2b8FY50v0w65Zg5ie3GBTPazP3\niZGcaI33AgMBAAECggEALuHjUctJavs5EVaXKMsG54GCFHBuBlBeSn2XquSeYZVy\nZ6hkrl0A3pCeX1FzlnPHysKkUd9ZP1MyIbSJsU475H72/dUh9YwfGjnD5CTYz1Uq\ni8GgVl5y700e5wkpDVkBkMS20ob4zu49XAmVUJOYhXxrkWKRsxntboENu0JWfXpS\nHSUycMWcfCGAJX15eeENAe0faoeULD/+esGrflcnWC0oPagO8ar3J6+p1qMKypE7\n61YhR2iwW3mHNtWMvOLCcoSvX3wwcgFpiNCCNX56r8mYJLAylCwA3JC41btvEHvu\nsiFKQE+UQ183HIC509ZvnRBqsol6m37DgUtNORyx8QKBgQDms5rj1ZfKzhI0Kt77\nezznLNV81Trgu6nhNUpuRjsX3fNN1+QGwwn49PkORFSvCkMvoYW5xHofodos3iP9\nI7tKyuFMgbSxXWM2lZ4woOmyG03VWWnc0NPehDcfiWkawUcYSAO/mX/A5fud5nJM\n++RgtiYJcnwjAYDPQxh2WKL75QKBgQDaeJiGIBcwwfEOLXligI79drA3SnDjUWza\nZJqlJroHUeB4wG6n3AhWOvVSSJNGjma8wtXIc0LQgNn84R8o6bhGHCJAeDvecgpO\nVzZo3xGmCDJH1wApZPG95yKQvfVzz1axRJDb2jAzCpveSf9PHozpKsyW0kVQHG9p\nuTfyWLRcqwKBgQC7wWaIkDgGVOoZzN5G+0hYuHNTMlLFvdWHNRDLaJsFVJyEOPUa\nz7cZB35+rvvgrVB6vlEQHChsABSJOY0+osr2FuF/m3xMcT2imefxmbQ4QOJ6hVeT\n39zeluop33JL1QsgZtOuJqYDfujl3DwgDU0TrIqOW79N2hZUGD4baw3SRQKBgQCy\nZf/GprXJLtW1ChUxBmG9QAotXDBKr9b/j19otPL7vzRZ5ml10QtNvt9Mzc7Vsrra\nMQ95nAVXVaCsCvjy48eCGL8vff8FaoJX7oeTo3Q57D+CwmJzauasd+2V3EhuxUS5\nhI/1t3ncdDFLl4lQBlZyoGxoTFQlUtL3tjOlRiIh+QKBgQDQj9TRPVgI4Tnd5t8Q\nhk5h1d6CQspmk+H8CmaNeOfHRZ0tga4Hi77Wlbf+69YkmM1VzSBG4tO4nMup/y54\nBFokaoTozviwXP+hgkXEFMjx0cUQbasExLo/hHQhhzWcKY2Y3/BOV30MRHjRk/oL\n+R4Mlz8Mda7I2OqeilxphTjjsg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "mingman@skklub.iam.gserviceaccount.com",
+  "client_id": "108942620047731205821",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/mingman%40skklub.iam.gserviceaccount.com"
+}
