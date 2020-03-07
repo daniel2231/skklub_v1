@@ -2,7 +2,7 @@ const gallery = document.querySelector(".gallery");
 
 console.log("cardMaker loaded");
 
-let requestURL = "../data/database.json"
+let requestURL = "../data/database.json";
 let request = new XMLHttpRequest();
 request.open("GET", requestURL);
 request.responseType = "json";
@@ -17,7 +17,6 @@ function showClubs(jsonObj) {
   const clubs = jsonObj["clubs"];
 
   for (let i = 0; i < clubs.length; i++) {
-
     const clubName = clubs[i].동아리명;
     const clubType = clubs[i].대분류;
     const cclubType = clubs[i].중분류1;
@@ -32,6 +31,8 @@ function showClubs(jsonObj) {
     const clubRecruiting = clubs[i].모집전형;
     const clubLocation = clubs[i].위치;
     const clubContact = clubs[i].대페;
+    const clubMade = clubs[i].창립연도;
+    const clubMember = clubs[i].활동인원;
 
     let sortType = "";
 
@@ -61,10 +62,10 @@ function showClubs(jsonObj) {
         sortType = "is";
         break;
       default:
-        console.log(`error with ${clubName}`)
+        console.log(`error with ${clubName}`);
     }
 
-    let card = document.createElement('div');
+    let card = document.createElement("div");
     card.innerHTML = `
     <div
     class="col l3 m4 s6 gallery-item gallery-expand gallery-filter ${sortType}"
@@ -83,25 +84,47 @@ function showClubs(jsonObj) {
       <div class="gallery-body">
         <div class="title-wrapper">
           <h3>${clubName}</h3>
+          <p class="line">
+          "${clubLine}"
+        </p>
           <span class="price">${clubType} > ${cclubType} > ${ccclubType}</span>
+          
         </div>
+        
         <div class="card-buttons">
           <a class="waves-effect waves-light btn" onclick="smoothScroll(document.getElementById('about'))">About</a>
           <a class="waves-effect waves-light btn" onclick="smoothScroll(document.getElementById('activity'))"
             >Activity</a
           >
           <a class="waves-effect waves-light btn" onclick="smoothScroll(document.getElementById('recruiting'))">Recruiting</a>
-          <a class="waves-effect waves-light btn" onclick="smoothScroll(document.getElementById('contact'))">Contact</a>
         </div>
-        <p class="description line">
-          "${clubLine}"
-        </p>
+      
         <p class="description" id="about">
           About
         </p>
+
+        <table>
+          <tr>
+            <td class="tb-va">모임시간</td>
+            <td>${clubActDay}</td>
+            <td class="tb-va">장소</td>
+            <td>${clubLocation}</td>
+          </tr>
+          <tr>
+            <td class="tb-va">창립연도</td>
+            <td>${clubMade}</td>
+            <td class="tb-va">활동 인원</td>
+            <td>${clubMember}</td>
+          </tr>
+        </table>
+
         <p>
           ${clubAbout}
         </p>
+
+        <a style="margin-bottom: 10px;" class="waves-effect waves-light btn" target="_blank" href="${clubContact}">대표 페이지</a>
+
+
         <hr>
 
         <p class="description" id="activity">
@@ -119,50 +142,36 @@ function showClubs(jsonObj) {
           <div class="row">
             <div class="col s6">
               <div class="center-align card-panel">
-                <i class="material-icons card-icon">school</i>
-                <h4 class="center-align">모집시기</h4>
-                <h5 class="center-align">${clubRecruitDuration}<h5>
+                <i class="material-icons card-icon">date_range</i>
+                <h4 class="card-title center-align">모집시기</h4>
+                <h5 class="card-desc center-align">${clubRecruitDuration}<h5>
               </div>
             </div>
 
             <div class="col s6">
               <div class="center-align card-panel">
-                <i class="material-icons card-icon">school</i>
-                <h4 class="center-align">모집인원</h4>
-                <h5 class="center-align">${clubRecruitNum} 명<h5>
+                <i class="material-icons card-icon">group_add</i>
+                <h4 class="card-title center-align">모집인원</h4>
+                <h5 class="card-desc center-align">${clubRecruitNum} 명<h5>
               </div>
             </div>
 
             <div class="col s6">
               <div class="center-align card-panel">
-                <i class="material-icons card-icon">school</i>
-                <h4 class="center-align">의무 활동기간</h4>
-                <h5 class="center-align">${clubServeTime}<h5>
+                <i class="material-icons card-icon">watch_later</i>
+                <h4 class="card-title center-align">의무 활동기간</h4>
+                <h5 class="card-desc center-align">${clubServeTime}<h5>
               </div>
             </div>
 
             <div class="col s6">
               <div class="center-align card-panel">
-                <i class="material-icons card-icon">school</i>
-                <h4 class="center-align">모집방식</h4>
-                <h5 class="center-align">${clubRecruiting}<h5>
+                <i class="material-icons card-icon">how_to_reg</i>
+                <h4 class="card-title center-align">모집방식</h4>
+                <h5 class="card-desc center-align">${clubRecruiting}<h5>
               </div>
             </div>
-
-            <div class="col s12">
-              <div class="center-align card-panel">
-                <i class="material-icons card-icon">school</i>
-                <h4 class="center-align">모임 요일</h4>
-                <h5 class="center-align">${clubActDay}<h5>
-              </div>
-            </div>
-          </div>
-          <hr>
-          
-        <p class="description" id="contact">
-          Contact
-        </p>
-        <a class="waves-effect waves-light btn" target="_blank" href="${clubContact}">대표 페이지</a>
+          </div>          
       </div>
     </div>
   </div>
