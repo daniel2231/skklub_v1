@@ -180,39 +180,3 @@ function showClubs(jsonObj) {
     gallery.appendChild(card);
   }
 }
-
-let makeFooter = () => {
-  document.getElementById("footer").innerHTML = `
-  <footer class="teal darken-1 page-footer">
-  <div class=" container">
-    <div class="row">
-      <div class="col l6 s12">
-        <h5 class="white-text">SKKLUB</h5>
-        <p class="grey-text text-lighten-4">
-          멋쟁이사자처럼 X 성균관대학교
-        </p>
-      </div>
-      <div class="col l4 offset-l2 s12">
-        <h5 class="white-text">SKKU Likelion Links</h5>
-        <ul>
-          <li>
-            <a class="grey-text text-lighten-3" href="#!">Facebook</a>
-          </li>
-          <li><a class="grey-text text-lighten-3" href="#!">Website</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="teal darken-1 footer-copyright">
-    <div class="container">
-      © 2020 Copyright LikeLion SKKU
-    </div>
-  </div>
-</footer>
-  `
-};
-
-setTimeout(function() {
-  makeFooter();
-},2000
-)
