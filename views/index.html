@@ -33,6 +33,14 @@
     <script defer src="js/color-thief.min.js"></script>
     <script defer src="js/galleryExpand.js"></script>
     <script defer src="js/init.js"></script>
+
+    <script defer>
+      setTimeout(function() {
+        console.log("loaded");
+        var elems = document.querySelectorAll(".sidenav");
+        var instances = M.Sidenav.init(elems, {});
+      }, 100);
+    </script>
   </head>
 
   <body>
@@ -108,14 +116,6 @@
     <!--Footer-->
     <div id="footer"></div>
   </body>
-
-  <script>
-    setTimeout(function() {
-      console.log("loaded");
-      var elems = document.querySelectorAll(".sidenav");
-      var instances = M.Sidenav.init(elems, {});
-    }, 100);
-  </script>
   <script>
     window.smoothScroll = function(target) {
       var scrollContainer = target;
