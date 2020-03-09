@@ -178,5 +178,6 @@ function showClubs(jsonObj) {
   </div>
     `;
     gallery.appendChild(card);
+    console.log(`card ${clubName} appended`);
   }
 }
