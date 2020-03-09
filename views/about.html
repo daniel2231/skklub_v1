@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SKKLUB</title>
-
+    <title>Document</title>
     <!--Materialize-->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -15,24 +14,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
     <!--Custom stylesheet-->
     <link rel="stylesheet" href="/css/style.css" />
     <link href="/css/gallery-materialize.min.css" rel="stylesheet" />
-
-    <!--Scripts-->
-    <script
-      defer
-      src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
-    ></script>
-    <script defer src="js/cardMaker.js"></script>
-
-    <script defer src="js/imagesloaded.pkgd.min.js"></script>
-    <script defer src="js/masonry.pkgd.min.js"></script>
-    <script defer src="js/materialize.min.js"></script>
-    <script defer src="js/color-thief.min.js"></script>
-    <script defer src="js/galleryExpand.js"></script>
-    <script defer src="js/init.js"></script>
   </head>
 
   <body>
@@ -53,15 +37,15 @@
           <li><a href="blog.html">학교기관/단체 (Coming Soon)</a></li>
           <li><a href="docs.html">About</a></li>
         </ul>
-
         <!-- Dropdown Structure -->
+
         <div class="nav-header center">
           <h1 class="header">모든 동아리 정보를 한눈에!</h1>
           <div class="">Made with 💚by likelion SKKU</div>
         </div>
       </div>
 
-      <!-- Fixed Filters -->
+      <!-- Fixed Masonry Filters -->
       <div class="categories-wrapper teal darken-4">
         <div class="categories-container">
           <ul class="categories container">
@@ -78,7 +62,6 @@
         </div>
       </div>
     </nav>
-
     <ul class="sidenav" id="nav-mobile">
       <li class="active">
         <a href="index.html"
@@ -86,63 +69,38 @@
         >
       </li>
       <li>
-        <a href="/"
+        <a href="index-dark.html"
           ><i class="material-icons">menu_book</i>학회 (Coming Soon)</a
         >
       </li>
       <li>
-        <a href="/"
+        <a href="blog.html"
           ><i class="material-icons">school</i>학교기관/단체 (Coming Soon)</a
         >
       </li>
       <li>
-        <a href="about.html"><i class="material-icons">emoji_people</i>About</a>
+        <a href="docs.html"><i class="material-icons">emoji_people</i>About</a>
       </li>
     </ul>
-
     <!-- Gallery -->
-    <div class="container">
-      <div class="gallery row"></div>
-    </div>
+    
 
-    <!--Footer-->
-    <div id="footer"></div>
+    <div id="footer">
+      
+    </div>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   <script>
     setTimeout(function() {
       console.log("loaded");
       var elems = document.querySelectorAll(".sidenav");
       var instances = M.Sidenav.init(elems, {});
+
+      var resizeImg = document.getElementsByClassName("img-re");
+      resizeImg.height = "100px";
+      resizeImg.width = "200px";
     }, 100);
   </script>
-  <script>
-    window.smoothScroll = function(target) {
-      var scrollContainer = target;
-      do {
-        //find scroll container
-        scrollContainer = scrollContainer.parentNode;
-        if (!scrollContainer) return;
-        scrollContainer.scrollTop += 1;
-      } while (scrollContainer.scrollTop == 0);
-
-      var targetY = 0;
-      do {
-        //find the top of target relatively to the container
-        if (target == scrollContainer) break;
-        targetY += target.offsetTop - 40;
-      } while ((target = target.offsetParent));
-
-      scroll = function(c, a, b, i) {
-        i++;
-        if (i > 30) return;
-        c.scrollTop = a + ((b - a) / 30) * i;
-        setTimeout(function() {
-          scroll(c, a, b, i);
-        }, 20);
-      };
-      // start scrolling
-      scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
-    };
-  </script>
+  <script src="js/cardMaker.js"></script>
 </html>

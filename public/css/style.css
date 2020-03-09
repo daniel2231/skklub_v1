@@ -40,10 +40,29 @@
 .tb-va {
   text-align: center;
   font-weight: bold;
+  word-break: keep-all;
 }
 
 @media only screen and (max-width: 768px) {
   .card-desc {
     font-size: 1.2em !important;
   }
+  .title-wrapper {
+    margin-top: 100px !important;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .card-desc {
+    font-size: 1.2em !important;
+  }
+  .title-wrapper {
+    margin-top: 70px !important;
+  }
+
+}
+
+.badge {
+  float: left !important;
+  margin: -10px 0px 10px 0px !important
 }

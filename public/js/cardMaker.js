@@ -37,7 +37,7 @@ function showClubs(jsonObj) {
     let sortType = "";
 
     switch (cclubType) {
-      case "연행예술":
+      case "언행예술":
         sortType = "yy";
         break;
       case "평면예술":
@@ -87,7 +87,6 @@ function showClubs(jsonObj) {
           <p class="line">
           "${clubLine}"
         </p>
-          <span class="price">${clubType} > ${cclubType} > ${ccclubType}</span>
           
         </div>
         
@@ -102,6 +101,8 @@ function showClubs(jsonObj) {
         <p class="description" id="about">
           About
         </p>
+        <span data-badge-caption="" class="new badge price">${clubType} > ${cclubType} > ${ccclubType}</span>
+
 
         <table>
           <tr>
@@ -176,7 +177,42 @@ function showClubs(jsonObj) {
     </div>
   </div>
     `;
-
     gallery.appendChild(card);
   }
 }
+
+let makeFooter = () => {
+  document.getElementById("footer").innerHTML = `
+  <footer class="teal darken-1 page-footer">
+  <div class=" container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">SKKLUB</h5>
+        <p class="grey-text text-lighten-4">
+          멋쟁이사자처럼 X 성균관대학교
+        </p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">SKKU Likelion Links</h5>
+        <ul>
+          <li>
+            <a class="grey-text text-lighten-3" href="#!">Facebook</a>
+          </li>
+          <li><a class="grey-text text-lighten-3" href="#!">Website</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="teal darken-1 footer-copyright">
+    <div class="container">
+      © 2020 Copyright LikeLion SKKU
+    </div>
+  </div>
+</footer>
+  `
+};
+
+setTimeout(function() {
+  makeFooter();
+},2000
+)
