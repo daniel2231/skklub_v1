@@ -13,6 +13,12 @@ request.onload = function() {
   showClubs(clubs);
 };
 
+$('.gallery').masonry({
+  itemSelector: '.gallery-item',
+  columnWidth: '.grid-sizer',
+  percentPosition: true
+});
+
 function showClubs(jsonObj) {
   const clubs = jsonObj["clubs"];
 
