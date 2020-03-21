@@ -1,5 +1,3 @@
-const gallery = document.querySelector(".gallery");
-
 console.log("cardMaker loaded");
 
 let requestURL = "../data/database.json";
@@ -7,6 +5,8 @@ let request = new XMLHttpRequest();
 request.open("GET", requestURL);
 request.responseType = "json";
 request.send();
+
+let gallery = $(".gallery");
 
 request.onload = function() {
   const clubs = request.response;
@@ -65,8 +65,7 @@ function showClubs(jsonObj) {
         console.log(`error with ${clubName}`);
     }
 
-    let card = document.createElement("div");
-    card.innerHTML = `
+    let $card = (document.createElement("div").innerHTML = `
     <div
     class="col l3 m4 s6 gallery-item gallery-expand gallery-filter ${sortType}"
   >
@@ -176,8 +175,9 @@ function showClubs(jsonObj) {
       </div>
     </div>
   </div>
-    `;
-    gallery.appendChild(card);
+    `);
+    gallery.append($card).masonry("appended", $card);
+
     console.log(`card ${clubName} appended`);
   }
 }
