@@ -27,14 +27,12 @@
     ></script>
     <script defer src="js/cardMaker.js"></script>
     <script defer src="js/imagesloaded.pkgd.min.js"></script>
-    <script defer src="js/masonry.pkgd.min.js"></script>
-    <script defer>
-      console.log("MS loaded");
-    </script>
+    <script defer src="js/galleryExpand.js"></script>
     <script defer src="js/materialize.min.js"></script>
     <script defer src="js/color-thief.min.js"></script>
-    <script defer src="js/galleryExpand.js"></script>
     <script defer src="js/init.js"></script>
+    <script defer src="js/masonry.pkgd.min.js"></script>
+    <script defer src="js/shuffle.js"></script>
 
     <script defer>
       setTimeout(function() {
@@ -61,7 +59,7 @@
             <a href="index-dark.html">학회 (Coming Soon)</a>
           </li>
           <li><a href="blog.html">학교기관/단체 (Coming Soon)</a></li>
-          <li><a href="docs.html">About</a></li>
+          <li><a href="/about">About</a></li>
         </ul>
 
         <!-- Dropdown Structure -->
@@ -76,14 +74,14 @@
         <div class="categories-container">
           <ul class="categories container">
             <li class="active"><a href="#all">전체</a></li>
-            <li><a href="#yy">연행예술</a></li>
-            <li><a href="#py">평면예술</a></li>
-            <li><a href="#bs">봉사</a></li>
-            <li><a href="#cg">취미교양</a></li>
-            <li><a href="#sp">스포츠</a></li>
-            <li><a href="#jg">종교분과</a></li>
-            <li><a href="#hb">학술분과</a></li>
-            <li><a href="#is">인문사회</a></li>
+            <li><a id="#btn-py">평면예술</a></li>
+            <li><a id="#btn-yy">연행예술</a></li>
+            <li><a id="#btn-bs">봉사</a></li>
+            <li><a id="#btn-cg">취미교양</a></li>
+            <li><a id="#btn-sp">스포츠</a></li>
+            <li><a id="#btn-jg">종교분과</a></li>
+            <li><a id="#btn-hb">학술분과</a></li>
+            <li><a id="#btn-is">인문사회</a></li>
           </ul>
         </div>
       </div>
@@ -91,7 +89,7 @@
 
     <ul class="sidenav" id="nav-mobile">
       <li class="active">
-        <a href="index.html"
+        <a href="index"
           ><i class="material-icons">folder_special</i>중앙동아리</a
         >
       </li>
@@ -106,7 +104,7 @@
         >
       </li>
       <li>
-        <a href="about.html"><i class="material-icons">emoji_people</i>About</a>
+        <a href="/about"><i class="material-icons">emoji_people</i>About</a>
       </li>
     </ul>
 

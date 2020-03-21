@@ -67,8 +67,8 @@ function showClubs(jsonObj) {
 
     let card = document.createElement("div");
     card.innerHTML = `
-    <div
-    class="col l3 m4 s6 gallery-item gallery-expand gallery-filter ${sortType}"
+    <div data-group='[${sortType}]'
+    class="col l3 m4 s6 gallery-item gallery-expand gallery-filter"
   >
     <div class="gallery-curve-wrapper">
       <a class="gallery-cover gray">

@@ -7553,8 +7553,8 @@ nav .categories-wrapper .categories-container .categories > li {
   display: inline-block;
 }
 .gallery {
-  position: relative;
 }
+
 .gallery.gallery-collection .gallery-item {
   margin-bottom: 1px;
 }
