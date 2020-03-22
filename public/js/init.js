@@ -75,7 +75,7 @@
       transitionDuration: 0
     });
     // layout Masonry after each image loads
-    $masonry.imagesLoaded(function() {
+    $masonry.imagesLoaded.progress(function() {
       $masonry.masonry('layout');
     });
     $('a.filter').click(function (e) {
