@@ -5,6 +5,9 @@ const viewPath = './views/';
 router.get('/', (req, res) => {
     res.sendFile(viewPath + 'index.html', { root: __dirname });
 });
+router.get('/dongyun', (req,res) => {
+    res.sendFile(viewPath + 'dongyun.html', {root: __dirname});
+})
 router.get('/about', (req, res) => {
     res.sendFile(viewPath + 'about.html', { root: __dirname });
 });

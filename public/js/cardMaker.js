@@ -1,3 +1,5 @@
+const gallery = document.querySelector(".gallery");
+
 console.log("cardMaker loaded");
 
 let requestURL = "../data/database.json";
@@ -6,18 +8,10 @@ request.open("GET", requestURL);
 request.responseType = "json";
 request.send();
 
-let gallery = $(".gallery");
-
 request.onload = function() {
   const clubs = request.response;
   showClubs(clubs);
 };
-
-$('.gallery').masonry({
-  itemSelector: '.gallery-item',
-  columnWidth: '.grid-sizer',
-  percentPosition: true
-});
 
 function showClubs(jsonObj) {
   const clubs = jsonObj["clubs"];
@@ -71,7 +65,8 @@ function showClubs(jsonObj) {
         console.log(`error with ${clubName}`);
     }
 
-    let $card = (document.createElement("div").innerHTML = `
+    let card = document.createElement("div");
+    card.innerHTML = `
     <div
     class="col l3 m4 s6 gallery-item gallery-expand gallery-filter ${sortType}"
   >
@@ -181,9 +176,8 @@ function showClubs(jsonObj) {
       </div>
     </div>
   </div>
-    `);
-    gallery.append($card).masonry("appended", $card);
-
+    `;
+    gallery.appendChild(card);
     console.log(`card ${clubName} appended`);
   }
 }

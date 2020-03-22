@@ -1,7 +1,15 @@
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-20 { font-size: 20px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-18 {
+  font-size: 18px;
+}
+.material-icons.md-20 {
+  font-size: 20px;
+}
+.material-icons.md-36 {
+  font-size: 36px;
+}
+.material-icons.md-48 {
+  font-size: 48px;
+}
 
 .card-name {
   font-size: 2em;
@@ -59,10 +67,78 @@
   .title-wrapper {
     margin-top: 70px !important;
   }
-
 }
 
 .badge {
   float: left !important;
-  margin: -10px 0px 10px 0px !important
+  margin: -10px 0px 10px 0px !important;
+}
+
+.gallery-curve-wrapper {
+  min-height: 157.44px !important;
+}
+
+/*동아리 연합회 소개 페이지 css*/
+
+h2 {
+  font-size: 2.5rem;
+  color: #66bfbf;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+h3 {
+  color: #11999e;
+}
+
+p {
+  color: #40514e;
+  line-height: 2;
+}
+
+.skill-row {
+  width: 70%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  text-wrap: none;
+}
+
+.developer {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.design {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .skill-row {
+    text-align: center;
+  }
+  .developer,
+  .design {
+    width: 50%;
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .skill-row {
+    text-align: center;
+  }
+
+  .developer,
+  .design {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
 }
