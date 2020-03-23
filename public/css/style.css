@@ -1,3 +1,7 @@
+* {
+  word-break: keep-all;
+}
+
 .material-icons.md-18 {
   font-size: 18px;
 }
@@ -75,7 +79,6 @@
 }
 
 .responsive-img {
-  min-height: 157.44px !important;
 }
 
 /*동아리 연합회 소개 페이지 css*/
@@ -100,7 +103,7 @@ p {
   width: 70%;
   margin: 100px auto 100px auto;
   text-align: left;
-  text-wrap: none;
+  word-break: keep-all;
 }
 
 .developer {

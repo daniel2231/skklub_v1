@@ -178,6 +178,7 @@ function showClubs(jsonObj) {
   </div>
     `;
     gallery.appendChild(card);
+    $("#container").masonry("reload");
     console.log(`card ${clubName} appended`);
   }
 }
