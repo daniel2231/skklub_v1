@@ -1,5 +1,7 @@
 const gallery = document.querySelector(".gallery");
 
+var elem = document.querySelector(".gallery");
+
 console.log("cardMaker loaded");
 
 let requestURL = "../data/database.json";
@@ -180,5 +182,5 @@ function showClubs(jsonObj) {
     gallery.appendChild(card);
     console.log(`card ${clubName} appended`);
   }
-  msnry.reloadItems();
+  masonry.reloadItems();
 }

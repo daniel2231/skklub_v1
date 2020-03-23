@@ -14,22 +14,28 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+    ></script>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"
+    ></script>
+    <script src="js/cardMaker.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/color-thief.min.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/galleryExpand.js"></script>
     <!--Custom stylesheet-->
     <link rel="stylesheet" href="/css/style.css" />
     <link href="/css/gallery-materialize.min.css" rel="stylesheet" />
 
     <!--Scripts-->
 
-    <script defer>
-      window.onload = function() {
-        $("#content").masonry({
-          columnWidth: 275,
-          itemSelector: ".gallery-item",
-          animate: true
-        });
-      };
+    <script>
       setTimeout(function() {
         console.log("loaded");
         var elems = document.querySelectorAll(".sidenav");
@@ -138,14 +144,6 @@
       </footer>
     </div>
   </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/cardMaker.js"></script>
-  <script src="js/imagesloaded.pkgd.min.js"></script>
-  <script src="js/masonry.pkgd.min.js"></script>
-  <script src="js/materialize.min.js"></script>
-  <script src="js/color-thief.min.js"></script>
-  <script src="js/init.js"></script>
-  <script src="js/galleryExpand.js"></script>
   <script>
     window.smoothScroll = function(target) {
       var scrollContainer = target;
