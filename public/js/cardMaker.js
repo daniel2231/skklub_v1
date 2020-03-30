@@ -1,5 +1,3 @@
-const gallery = document.querySelector(".gallery");
-
 var elem = document.querySelector(".gallery");
 
 console.log("cardMaker loaded");
@@ -76,8 +74,8 @@ function showClubs(jsonObj) {
       <a class="gallery-cover gray">
         <img
           class="responsive-img"
-          src="/img/${clubName}.jpeg"
-          onerror="javascript:src='/img/몰라잉.jpeg'"
+          src="/img/${clubName}.jpg"
+          onerror="javascript:src='/img/alt.jpg'"
         />
       </a>
       <div class="gallery-header">
@@ -90,14 +88,6 @@ function showClubs(jsonObj) {
           "${clubLine}"
         </p>
           
-        </div>
-        
-        <div class="card-buttons">
-          <a class="waves-effect waves-light btn" onclick="smoothScroll(document.getElementById('about'))">About</a>
-          <a class="waves-effect waves-light btn" onclick="smoothScroll(document.getElementById('activity'))"
-            >Activity</a
-          >
-          <a class="waves-effect waves-light btn" onclick="smoothScroll(document.getElementById('recruiting'))">Recruiting</a>
         </div>
       
         <p class="description" id="about">
@@ -179,8 +169,7 @@ function showClubs(jsonObj) {
     </div>
   </div>
     `;
-    gallery.appendChild(card);
+    elem.appendChild(card);
     console.log(`card ${clubName} appended`);
   }
-  masonry.reloadItems();
 }

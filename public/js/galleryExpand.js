@@ -407,6 +407,7 @@
             var originalNavColor = "";
             if ($("nav").length) {
               originalNavColor = $("nav").css("background-color");
+              console.log(originalNavColor)
               $("nav").addClass("fadeOut");
             }
             navbar.css({ "background-color": originalNavColor });
@@ -480,6 +481,48 @@
                   }
                 }
               }
+              var getContrast = function(originalNavColor) {
+
+                function componentToHex(c) {
+                  var hex = c.toString(16);
+                  return hex.length == 1 ? "0" + hex : hex;
+                }
+                
+                function rgbToHex(r, g, b) {
+                  return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+                }
+
+                rgbToHex(originalNavColor)
+
+                // If a leading # is provided, remove it
+                if (originalNavColor.slice(0, 1) === "#") {
+                  originalNavColor = originalNavColor.slice(1);
+                }
+              
+                // If a three-character hexcode, make six-character
+                if (originalNavColor.length === 3) {
+                  originalNavColor = originalNavColor
+                    .split("")
+                    .map(function(hex) {
+                      return hex + hex;
+                    })
+                    .join("");
+                }
+              
+                // Convert to RGB value
+                var r = parseInt(originalNavColor.substr(0, 2), 16);
+                var g = parseInt(originalNavColor.substr(2, 2), 16);
+                var b = parseInt(originalNavColor.substr(4, 2), 16);
+              
+                // Get YIQ ratio
+                var yiq = (r * 299 + g * 587 + b * 114) / 1000;
+              
+                // Check contrast
+                return yiq >= 128 ? "black" : "white";
+              };
+              setTimeout(function() {
+                document.querySelector(".back-btn").style.color = getContrast();
+              }, 3000);
             }
 
             // If color thief fails to set primaryColor
@@ -961,3 +1004,5 @@
     }
   }; // Plugin end
 })(jQuery, M.anime);
+
+
