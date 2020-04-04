@@ -8,7 +8,7 @@ document.querySelector(".yy").addEventListener("click", function() {
 });
 document.querySelector(".bs").addEventListener("click", function() {
   document.querySelector(".introCard").style.display = "";
-  document.querySelector("#introText").innerHTML = "봉사분과는 성균관대 중앙봉사동아리 5개로 구성된 분과로서 헤라, 쿠사, 캠퍼스학생회, 심산한누리 그리고 호우회가 그 5개 동아리입니다!! 교내, 교외 봉사를 모두 담당하고 있는 것은 물론! 교내 및 교외 봉사들을 직접 기획하고 실행하는 일까지!! 삶의 이유와 활력을 찾고 싶다면 봉사 분과 동아리로 오세요!!";
+  document.querySelector("#introText").innerHTML = "봉사분과는 성균관대 중앙봉사동아리 5개로 구성된 분과로서 헤라, 쿠사, 캠퍼스학생회, 심산한누리 그리고 호우회가 그 5개 동아리입니다. 교내, 교외 봉사를 모두 담당하고 있는 것은 물론, 교내 및 교외 봉사들을 직접 기획하고 실행하는 일까지 삶의 이유와 활력을 찾고 싶다면 봉사 분과 동아리로 오세요!";
 });
 document.querySelector(".cg").addEventListener("click", function() {
   document.querySelector(".introCard").style.display = "";
