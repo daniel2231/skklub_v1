@@ -1,4 +1,4 @@
-var elem = document.querySelector(".gallery");
+var elem = document.querySelector(".test");
 
 console.log("cardMaker loaded");
 
