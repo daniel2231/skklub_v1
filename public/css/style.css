@@ -103,7 +103,7 @@ p {
   width: 70%;
   margin: 100px auto 100px auto;
   word-break: keep-all;
-  text-align: center;
+  text-align: left;
 }
 
 .developer {
