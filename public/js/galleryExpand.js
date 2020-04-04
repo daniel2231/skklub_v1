@@ -402,7 +402,7 @@
             var navWrapper = $('<div class="nav-wrapper"></div>');
             var container = $('<div class="container"></div>');
             var backBtn = $(
-              '<a class="waves-effect waves-light btn">뒤로가기</a>'
+              '<a class="waves-effect waves-light black btn">뒤로가기</a>'
             );
             var originalNavColor = "";
             if ($("nav").length) {
