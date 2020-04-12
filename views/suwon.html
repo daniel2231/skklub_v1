@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SKKLUB</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-162846832-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-162846832-1");
+    </script>
+
+    <!--Materialize-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script defer src="js/cardMaker.js"></script> -->
+    <script defer src="js/imagesloaded.pkgd.min.js"></script>
+    <script defer src="js/materialize.min.js"></script>
+    <script defer src="js/color-thief.min.js"></script>
+    <script src="js/switchPage.js"></script>
+    <!--Custom stylesheet-->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link href="/css/gallery-materialize.min.css" rel="stylesheet" />
+
+    <link rel="icon" href="/myicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/myicon.ico" type="image/x-icon" />
+    <!--Scripts-->
+
+    <script>
+      setTimeout(function () {
+        console.log("loaded");
+        var elems = document.querySelectorAll(".sidenav");
+        var instances = M.Sidenav.init(elems, {});
+      }, 100);
+    </script>
+  </head>
+
+  <body>
+    <nav class="teal darken-1 nav-extended">
+      <div class="nav-background">
+        <div class="pattern active"></div>
+      </div>
+      <div class="nav-wrapper container">
+        <a href="/" class="brand-logo">SKKLUB</a>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"
+          ><i class="material-icons">menu</i></a
+        >
+        <ul class="right hide-on-med-and-down">
+          <li class="active"><a href="/">중앙동아리</a></li>
+          <li class="disabled">
+            <a href="/">학회 (Coming Soon)</a>
+          </li>
+          <li><a href="/dongyun">동아리연합회</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+
+        <!-- Dropdown Structure -->
+        <div class="nav-header center">
+          <h1 class="header">모든 동아리 정보를 한눈에!</h1>
+          <div class="switch">
+            <label>
+              명륜
+              <input class="switchValue" type="checkbox" checked>
+              <span class="lever"></span>
+              율전
+            </label>
+          </div>          <!--PopUp-->
+          <!--
+          <a class="btn1" href="#open-modal">👋 이벤트 진행중!</a>
+          <div id="open-modal" class="modal-window1">
+            <div>
+              <a href="#" title="Close" class="modal-close">닫기</a>
+              <h3>여러분들이 들어가고 싶은 동아리는?</h3>
+              <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque cum dolorum repellendus error temporibus corporis nihil! Quos, natus reiciendis necessitatibus inventore omnis, accusamus iste dolores placeat veniam autem quas quibusdam?</div>
+              <div><small>Check out</small></div>
+              <a href="" target="_blank">👉 동연 페이스북 페이지</a>
+              </div> -->
+        </div>
+        </div>
+      </div>
+
+      <!-- Fixed Filters -->
+      <div class="categories-wrapper teal darken-4">
+        <div class="categories-container">
+          <ul class="categories container">
+            <li id="check" class="active">
+              <a class="all" id="btn" href="#all">전체</a>
+            </li>
+            <li><a class="py" id="btn" href="#py">평면예술</a></li>
+            <li><a class="yy" id="btn" href="#yy">연행예술</a></li>
+            <li><a class="bs" id="btn" href="#bs">봉사</a></li>
+            <li><a class="cg" id="btn" href="#cg">취미교양</a></li>
+            <li><a class="sp" id="btn" href="#sp">스포츠</a></li>
+            <li><a class="jg" id="btn" href="#jg">종교분과</a></li>
+            <li><a class="hb" id="btn" href="#hb">학술분과</a></li>
+            <li><a class="is" id="btn" href="#is">인문사회</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="nav-mobile">
+      <li class="active">
+        <a href="/"><i class="material-icons">folder_special</i>중앙동아리</a>
+      </li>
+      <li>
+        <a href="/"
+          ><i class="material-icons">menu_book</i>학회 (Coming Soon)</a
+        >
+      </li>
+      <li>
+        <a href="/dongyun"><i class="material-icons">school</i>동아리연합회</a>
+      </li>
+      <li>
+        <a href="/about"><i class="material-icons">emoji_people</i>About</a>
+      </li>
+    </ul>
+
+    <!-- Gallery -->
+    <div class="container">
+      <div class="row introCard">
+        <div class="col s12 m12">
+          <div class="card teal darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">소개</span>
+              <p class="white-text" id="introText"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery row">
+
+      </div>
+    </div>
+
+    <!--Footer-->
+    <div id="footer">
+      <footer class="teal darken-1 page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">SKKLUB</h5>
+              <p class="grey-text text-lighten-4">
+                멋쟁이사자처럼 X 성균관대학교
+              </p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">SKKU Likelion Links</h5>
+              <ul>
+                <li>
+                  <a
+                    class="grey-text text-lighten-3"
+                    href="https://www.facebook.com/likelionskku"
+                    >Facebook</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="grey-text text-lighten-3"
+                    href="http://www.skkulikelion.com/"
+                    >Website</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="teal darken-1 footer-copyright">
+          <div class="container">
+            © 2020 Copyright LikeLion SKKU
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="js/introcard2.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+  <script src="js/init.js"></script>
+  <script defer src="js/galleryExpand.js"></script>
+
+  <script>
+    window.smoothScroll = function (target) {
+      var scrollContainer = target;
+      do {
+        //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+      } while (scrollContainer.scrollTop == 0);
+
+      var targetY = 0;
+      do {
+        //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop - 40;
+      } while ((target = target.offsetParent));
+
+      scroll = function (c, a, b, i) {
+        i++;
+        if (i > 30) return;
+        c.scrollTop = a + ((b - a) / 30) * i;
+        setTimeout(function () {
+          scroll(c, a, b, i);
+        }, 20);
+      };
+      // start scrolling
+      scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+    };
+  </script>
+</html>

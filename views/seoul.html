@@ -35,6 +35,7 @@
     <script defer src="js/imagesloaded.pkgd.min.js"></script>
     <script defer src="js/materialize.min.js"></script>
     <script defer src="js/color-thief.min.js"></script>
+    <script src="js/switchPage.js"></script>
     <!--Custom stylesheet-->
     <link rel="stylesheet" href="/css/style.css" />
     <link href="/css/gallery-materialize.min.css" rel="stylesheet" />
@@ -74,7 +75,14 @@
         <!-- Dropdown Structure -->
         <div class="nav-header center">
           <h1 class="header">모든 동아리 정보를 한눈에!</h1>
-          <div class="">Made with 💚by LikeLion SKKU</div>
+            <div class="switch">
+              <label>
+                명륜
+                <input class="switchValue" type="checkbox">
+                <span class="lever"></span>
+                율전
+              </label>
+            </div>
           <!--PopUp-->
           <!--
           <a class="btn1" href="#open-modal">👋 이벤트 진행중!</a>

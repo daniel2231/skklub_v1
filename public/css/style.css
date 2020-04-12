@@ -78,6 +78,14 @@
   }
 }
 
+.aDisable:hover {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.switch > label {
+  color: white;
+}
+
 .badge {
   float: left !important;
   margin: -10px 0px 10px 0px !important;

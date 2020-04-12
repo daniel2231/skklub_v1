@@ -3,7 +3,10 @@ var router = express.Router();
 const viewPath = './views/';
 
 router.get('/', (req, res) => {
-    res.sendFile(viewPath + 'index.html', { root: __dirname });
+    res.sendFile(viewPath + 'seoul.html', { root: __dirname });
+});
+router.get('/suwon', (req, res) => {
+    res.sendFile(viewPath + 'suwon.html', { root: __dirname });
 });
 router.get('/dongyun', (req,res) => {
     res.sendFile(viewPath + 'dongyun.html', {root: __dirname});
