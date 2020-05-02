@@ -120,14 +120,14 @@ p {
 
 .developer {
   width: 200px;
-  float: none;
-  margin: 0;
+  height: 200px;
+  
 }
 
 .design {
   width: 200px;
-  margin-right: 30px;
-  margin-top: 10px;
+  height: 200px;
+  
 }
 
 body {

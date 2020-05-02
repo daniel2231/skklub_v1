@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta property="og:description" content="성균관대학교 모든 동아리를 한눈에!">
-<meta property="og:image" content="https://scontent-ssn1-1.xx.fbcdn.net/v/t1.0-9/92238014_3274604422569396_9142889958955024384_n.jpg?_nc_cat=103&_nc_sid=110474&_nc_ohc=krDrkRNUNHsAX9ycdeQ&_nc_ht=scontent-ssn1-1.xx&oh=7972617a2f585d91b87c52d149f9f66b&oe=5EB7E72F" />
+    <meta
+      property="og:description"
+      content="성균관대학교 모든 동아리를 한눈에!"
+    />
+    <meta
+      property="og:image"
+      content="https://scontent-ssn1-1.xx.fbcdn.net/v/t1.0-9/92238014_3274604422569396_9142889958955024384_n.jpg?_nc_cat=103&_nc_sid=110474&_nc_ohc=krDrkRNUNHsAX9ycdeQ&_nc_ht=scontent-ssn1-1.xx&oh=7972617a2f585d91b87c52d149f9f66b&oe=5EB7E72F"
+    />
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -12,17 +18,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SKKLUB</title>
 
-     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162846832-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-162846832-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'UA-162846832-1');
-</script>
+      gtag("config", "UA-162846832-1");
+    </script>
 
     <!--Materialize-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -32,6 +45,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
     <!--Custom stylesheet-->
     <link rel="stylesheet" href="/css/style.css" />
     <link href="/css/gallery-materialize.min.css" rel="stylesheet" />
@@ -41,7 +55,7 @@
   </head>
 
   <body>
-    <nav class=" teal darken-1 nav-extended">
+    <nav class="teal darken-1 nav-extended">
       <div class="nav-background">
         <div class="pattern active"></div>
       </div>
@@ -52,9 +66,6 @@
         >
         <ul class="right hide-on-med-and-down">
           <li><a href="/">중앙동아리</a></li>
-          <li class="disabled">
-            <a href="/">학회 (Coming Soon)</a>
-          </li>
           <li class="active"><a href="/dongyun">동아리연합회</a></li>
           <li><a href="/about">About</a></li>
         </ul>
@@ -69,13 +80,8 @@
       </div>
     </nav>
     <ul class="sidenav" id="nav-mobile">
-      <li >
-        <a href="/"><i class="material-icons">folder_special</i>중앙동아리</a>
-      </li>
       <li>
-        <a href="/"
-          ><i class="material-icons">menu_book</i>학회 (Coming Soon)</a
-        >
+        <a href="/"><i class="material-icons">folder_special</i>중앙동아리</a>
       </li>
       <li class="active">
         <a href="/동아리연합회">
@@ -87,56 +93,117 @@
       </li>
     </ul>
 
+    <div class="section no-pad-bot" id="index-banner">
+      <div class="container">
+        <br /><br />
+        <h1 class="header center teal-text">이구동성</h1>
+        <div class="row center" style="padding-top: 20px;">
+          <a
+            href="https://www.facebook.com/29dongskku"
+            id="download-button"
+            class="btn-large waves-effect waves-light teal p3"
+            >자세히 보기</a
+          >
+        </div>
+        <br /><br />
+      </div>
+    </div>
     <div class="container">
-      <div class="middle-container">
-        <div class="skills">
-          <div class="skill-row">
-            <img class="developer" src="/img/dy1.svg" alt="" />
-            <h3>소개</h3>
-            <p>
-              성균관대학교 동아리연합회는 우리 대학 캠퍼스 문화의 건전한 발전을
-              민주적인 절차를 통해 이뤄낼 수 있는 기틀을 마련하며, 행정 처리 및
-              행사 추진 등을 일체 담당합니다.
-            </p>
-            <p>
-              동아리연합회는 중앙동아리 소속 학우들의 활동을 장려하는 것을
-              넘어서, 교내 모든 동아리 및 소모임, 학회 등이 이용할 수 있는
-              공간을 제공하고, 중앙동아리 관련 정보를 신입생에게 제공하는 등
-              성균인의 문화생활을 장려하고 있습니다.
-            </p>
+      <div class="section">
+        <!--   Icon Section   -->
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text">
+                <img class="developer" src="/seoul/dy1.svg" alt="" />
+              </h2>
+              <h5 class="center">소개</h5>
+
+              <p class="light">
+                성균관대학교 동아리연합회는 우리 대학 캠퍼스 문화의 건전한
+                발전을 민주적인 절차를 통해 이뤄낼 수 있는 기틀을 마련하며, 행정
+                처리 및 행사 추진 등을 일체 담당합니다.
+              </p>
+              <p class="light">
+                동아리연합회는 중앙동아리 소속 학우들의 활동을 장려하는 것을
+                넘어서, 교내 모든 동아리 및 소모임, 학회 등이 이용할 수 있는
+                공간을 제공하고, 중앙동아리 관련 정보를 신입생에게 제공하는 등
+                성균인의 문화생활을 장려하고 있습니다.
+              </p>
+            </div>
           </div>
-          <div class="skill-row">
-            <img class="design" src="/img/dy2.svg" alt="" />
-            <h3>구성</h3>
-            <p>
-              동아리연합회 내의 원활한 업무 수행을 위해 집행부를 구성, 비서국,
-              사무국, 문화국, 홍보국, 총무국이 서로 소통하고 업무를 함께
-              추진하며 행정 처리를 진행하고 있습니다. 이렇게 진행된 상시사업과
-              공약사업의 이행은 ‘사업보고서’를 통해 학우들에게 투명하게 공개되고
-              있습니다.
-            </p>
+
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text">
+                <img class="developer" src="/seoul/dy3.svg" alt="" />
+              </h2>
+              <h5 class="center">활동</h5>
+
+              <p class="light">
+                민주적 의견 수렴을 위해 매달 운영위원회 및 전동대회를 열어
+                정보를 공유하고, 결정사항을 함께 결정하며, 건의사항에 대해
+                검토합니다. 또한 소통창구를 통해 항상 학내 구성원의 목소리에 귀
+                기울이고 있습니다.
+              </p>
+              <p class="light">
+                이러한 동아리연합회는 특별기구로써 중앙운영위원회를 구성,
+                학생자치활동에 적극적으로 참여합니다. 더욱이 학내 모든
+                동아리인들의 목소리를 대변하고, 서로 다른 목소리, 서로 다른
+                의견을 한데 모아 함께 논의하는 과정에서 최선을 향해 나아가려고
+                노력합니다. 동아리연합회는 성균관대학교의 학생사회의 발전을 위해
+                이바지합니다.
+              </p>
+            </div>
           </div>
-          <div class="skill-row">
-            <img class="developer" src="/img/dy3.svg" alt="" />
-            <h3>활동</h3>
-            <p>
-              민주적 의견 수렴을 위해 매달 운영위원회 및 전동대회를 열어 정보를
-              공유하고, 결정사항을 함께 결정하며, 건의사항에 대해 검토합니다.
-              또한 소통창구를 통해 항상 학내 구성원의 목소리에 귀 기울이고
-              있습니다.
-            </p>
-            <p>
-              이러한 동아리연합회는 특별기구로써 중앙운영위원회를 구성,
-              학생자치활동에 적극적으로 참여합니다. 더욱이 학내 모든
-              동아리인들의 목소리를 대변하고, 서로 다른 목소리, 서로 다른 의견을
-              한데 모아 함께 논의하는 과정에서 최선을 향해 나아가려고
-              노력합니다. 동아리연합회는 성균관대학교의 학생사회의 발전을 위해
-              이바지합니다.
-            </p>
+
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text">
+                <img class="design" src="/seoul/dy2.svg" alt="" />
+              </h2>
+              <h5 class="center">구성</h5>
+
+              <p class="light">
+                동아리연합회 내의 원활한 업무 수행을 위해 집행부를 구성, 비서국,
+                사무국, 문화국, 홍보국, 총무국이 서로 소통하고 업무를 함께
+                추진하며 행정 처리를 진행하고 있습니다. 이렇게 진행된 상시사업과
+                공약사업의 이행은 ‘사업보고서’를 통해 학우들에게 투명하게
+                공개되고 있습니다.
+              </p>
+            </div>
           </div>
         </div>
       </div>
+      <br /><br />
     </div>
+
+    <!--Unused element: Gallery
+    <div class="container pic-gallery">
+      <div class="row center">
+        <h5 class="header col s12 light">
+          활동 사진
+        </h5>
+      </div>
+      <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="https://lorempixel.com/580/250/nature/1" />
+          </li>
+          <li>
+            <img src="https://lorempixel.com/580/250/nature/2" />
+          </li>
+          <li>
+            <img src="https://lorempixel.com/580/250/nature/3" />
+          </li>
+          <li>
+            <img src="https://lorempixel.com/580/250/nature/4" />
+          </li>
+        </ul>
+      </div>
+    </div>
+     -->
+
     <footer class="teal darken-1 page-footer">
       <div class="container">
         <div class="row">
@@ -150,10 +217,18 @@
             <h5 class="white-text">SKKU Likelion Links</h5>
             <ul>
               <li>
-                <a class="grey-text text-lighten-3" href="https://www.facebook.com/likelionskku">Facebook</a>
+                <a
+                  class="grey-text text-lighten-3"
+                  href="https://www.facebook.com/likelionskku"
+                  >Facebook</a
+                >
               </li>
               <li>
-                <a class="grey-text text-lighten-3" href="http://www.skkulikelion.com/">Website</a>
+                <a
+                  class="grey-text text-lighten-3"
+                  href="http://www.skkulikelion.com/"
+                  >Website</a
+                >
               </li>
             </ul>
           </div>
@@ -166,10 +241,14 @@
       </div>
     </footer>
   </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   <script>
-    setTimeout(function() {
+    $(document).ready(function () {
+      $(".slider").slider();
+    });
+    var mb = document.querySelectorAll(".materialboxed");
+    M.Materialbox.init(mb, {});
+    setTimeout(function () {
       console.log("loaded");
       var elems = document.querySelectorAll(".sidenav");
       var instances = M.Sidenav.init(elems, {});
@@ -179,5 +258,4 @@
       resizeImg.width = "200px";
     }, 100);
   </script>
-  <script src="js/cardMaker.js"></script>
 </html>
