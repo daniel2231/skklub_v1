@@ -9,7 +9,7 @@ ss2json.convert({
   }).then((data) => {
     // filteredData : 개행문자 반영한 것(data변수는 \n으로 표현되어 있음)
     var filteredData = JSON.stringify(data).replace(/\\n/gi, '<br>');
-    fs.writeFile('../data/database.json',"{\"clubs\":"+filteredData + "}",'utf8',function(err){
+    fs.writeFile('../data/suwon.json',"{\"clubs\":"+filteredData + "}",'utf8',function(err){
         if(err) {
             next(err);
         }else{

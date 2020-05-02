@@ -1,8 +1,8 @@
-var elem = document.querySelector(".test");
+var elem = document.querySelector(".gallery");
 
 console.log("cardMaker loaded");
 
-let requestURL = "../data/database.json";
+let requestURL = "../data/suwon.json";
 let request = new XMLHttpRequest();
 request.open("GET", requestURL);
 request.responseType = "json";
@@ -37,29 +37,29 @@ function showClubs(jsonObj) {
     let sortType = "";
 
     switch (cclubType) {
-      case "언행예술":
+      case "연행예술":
         sortType = "yy";
         break;
       case "평면예술":
         sortType = "py";
         break;
-      case "봉사":
-        sortType = "bs";
+      case "과학기술":
+        sortType = "kk";
         break;
       case "취미교양":
         sortType = "cg";
         break;
-      case "스포츠":
-        sortType = "sp";
+      case "사회":
+        sortType = "sh";
         break;
-      case "종교분과":
+      case "종교":
         sortType = "jg";
         break;
-      case "학술분과":
-        sortType = "hb";
+      case "학술":
+        sortType = "hs";
         break;
-      case "인문사회":
-        sortType = "is";
+      case "건강체육":
+        sortType = "kc";
         break;
       default:
         console.log(`error with ${clubName}`);
@@ -74,8 +74,8 @@ function showClubs(jsonObj) {
       <a class="gallery-cover gray">
         <img
           class="responsive-img"
-          src="/img/${clubName}.jpg"
-          onerror="javascript:src='/img/alt.jpg'"
+          src="/suwon/${clubName}.jpg"
+          onerror="javascript:src='/suwon/alt.jpg'"
         />
       </a>
       <div class="gallery-header">
