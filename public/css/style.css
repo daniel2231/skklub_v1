@@ -78,6 +78,14 @@
   }
 }
 
+.aDisable:hover {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.switch > label {
+  color: white;
+}
+
 .badge {
   float: left !important;
   margin: -10px 0px 10px 0px !important;
@@ -225,6 +233,10 @@ small {
   padding-right: 0.3em;
 }
 
-.pic-gallery {
-  margin-bottom: 100px !important;
+.switch label input[type=checkbox]:checked+.lever {
+  background-color: #e0e0e0 !important;
+}
+
+.switch label input[type=checkbox]:checked+.lever:after {
+  background-color: #fff !important;
 }
