@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta
+      property="og:description"
+      content="성균관대학교 모든 동아리를 한눈에!"
+    />
+    <meta
+      property="og:image"
+      content="https://scontent-ssn1-1.xx.fbcdn.net/v/t1.0-9/92238014_3274604422569396_9142889958955024384_n.jpg?_nc_cat=103&_nc_sid=110474&_nc_ohc=krDrkRNUNHsAX9ycdeQ&_nc_ht=scontent-ssn1-1.xx&oh=7972617a2f585d91b87c52d149f9f66b&oe=5EB7E72F"
+    />
+
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -9,15 +18,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SKKLUB</title>
 
-     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162846832-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-162846832-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'UA-162846832-1');
-</script>
+      gtag("config", "UA-162846832-1");
+    </script>
 
     <!--Materialize-->
     <link
@@ -38,7 +52,7 @@
   </head>
 
   <body>
-    <nav class=" teal darken-1 nav-extended">
+    <nav class="teal darken-1 nav-extended">
       <div class="nav-background">
         <div class="pattern active"></div>
       </div>
@@ -157,10 +171,18 @@
             <h5 class="white-text">SKKU Likelion Links</h5>
             <ul>
               <li>
-                <a class="grey-text text-lighten-3" href="https://www.facebook.com/likelionskku">Facebook</a>
+                <a
+                  class="grey-text text-lighten-3"
+                  href="https://www.facebook.com/likelionskku"
+                  >Facebook</a
+                >
               </li>
               <li>
-                <a class="grey-text text-lighten-3" href="http://www.skkulikelion.com/">Website</a>
+                <a
+                  class="grey-text text-lighten-3"
+                  href="http://www.skkulikelion.com/"
+                  >Website</a
+                >
               </li>
             </ul>
           </div>
@@ -176,7 +198,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   <script>
-    setTimeout(function() {
+    setTimeout(function () {
       console.log("loaded");
       var elems = document.querySelectorAll(".sidenav");
       var instances = M.Sidenav.init(elems, {});
