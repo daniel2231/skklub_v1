@@ -232,3 +232,11 @@ small {
 .btn1 i {
   padding-right: 0.3em;
 }
+
+.switch label input[type=checkbox]:checked+.lever {
+  background-color: #e0e0e0 !important;
+}
+
+.switch label input[type=checkbox]:checked+.lever:after {
+  background-color: #fff !important;
+}

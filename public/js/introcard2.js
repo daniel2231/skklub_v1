@@ -1,33 +1,33 @@
-document.querySelector(".py").addEventListener("click", function() {
-    document.querySelector(".introCard").style.display = "";
+document.querySelector(".yy").addEventListener("click", function() {
+    document.querySelector(".introCard").style.display = "연행예술";
     document.querySelector("#introText").innerHTML = "";
   });
-  document.querySelector(".yy").addEventListener("click", function() {
-    document.querySelector(".introCard").style.display = "";
+  document.querySelector(".py").addEventListener("click", function() {
+    document.querySelector(".introCard").style.display = "평면예술";
     document.querySelector("#introText").innerHTML = "";
   });
-  document.querySelector(".bs").addEventListener("click", function() {
-    document.querySelector(".introCard").style.display = "";
+  document.querySelector(".kk").addEventListener("click", function() {
+    document.querySelector(".introCard").style.display = "과학기술";
     document.querySelector("#introText").innerHTML = "";
   });
   document.querySelector(".cg").addEventListener("click", function() {
-    document.querySelector(".introCard").style.display = "";
+    document.querySelector(".introCard").style.display = "취미교양";
     document.querySelector("#introText").innerHTML = "";
   });
-  document.querySelector(".sp").addEventListener("click", function() {
-    document.querySelector(".introCard").style.display = "";
+  document.querySelector(".sh").addEventListener("click", function() {
+    document.querySelector(".introCard").style.display = "사회";
     document.querySelector("#introText").innerHTML = "";
   });
   document.querySelector(".jg").addEventListener("click", function() {
-    document.querySelector(".introCard").style.display = "";
+    document.querySelector(".introCard").style.display = "종교";
     document.querySelector("#introText").innerHTML = "";
   });
-  document.querySelector(".hb").addEventListener("click", function() {
-    document.querySelector(".introCard").style.display = "";
+  document.querySelector(".hs").addEventListener("click", function() {
+    document.querySelector(".introCard").style.display = "학술";
     document.querySelector("#introText").innerHTML = "";
   });
-  document.querySelector(".is").addEventListener("click", function() {
-    document.querySelector(".introCard").style.display = "";
+  document.querySelector(".kc").addEventListener("click", function() {
+    document.querySelector(".introCard").style.display = "건강체육";
     document.querySelector("#introText").innerHTML = "";
   });
   document.querySelector(".all").addEventListener("click", function() {
