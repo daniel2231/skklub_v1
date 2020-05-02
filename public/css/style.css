@@ -224,3 +224,7 @@ small {
 .btn1 i {
   padding-right: 0.3em;
 }
+
+.pic-gallery {
+  margin-bottom: 100px !important;
+}
