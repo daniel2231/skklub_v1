@@ -11,7 +11,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "masonry-layout": "^4.2.2",
-    "nodemon": "^2.0.2",
+    "nodemon": "^2.0.22",
     "shufflejs": "^5.2.3",
     "ss2json": "^3.0.6"
   }
